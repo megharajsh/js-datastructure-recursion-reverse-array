@@ -3,9 +3,10 @@ import './style.css';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+appDiv.innerHTML = `<h1>JS Starter</h1><hr>`;
 
 const inputArr = [1,2,3,4,5];
+appDiv.innerHTML += `<br><br>Input Array: ${inputArr}`;
 
 var recursiveReverse = function(arr) {
   let reversedArr = [];
@@ -21,4 +22,6 @@ var recursiveReverse = function(arr) {
   return reversedArr;
 }
 
-console.log(recursiveReverse(inputArr));
+const outputArr = recursiveReverse(inputArr);
+appDiv.innerHTML += `<br><br>Output Array: ${outputArr}`;
+console.log();
